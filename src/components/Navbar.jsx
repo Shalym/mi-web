@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = ({ toggleDarkMode, isDarkMode }) => {
   return (
     <nav style={{
-      background: "rgba(0, 0, 0, 0.8)",
+      background: isDarkMode ? "#333" : "rgba(0, 0, 0, 0.8)",
       color: "#fff",
       padding: "15px 20px",
       position: "fixed",
@@ -29,7 +29,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
       </ul>
       <button onClick={toggleDarkMode} style={{
         padding: "10px",
-        background: "#ff4500",
+        background: isDarkMode ? "#555" : "#ff4500",
         color: "white",
         border: "none",
         borderRadius: "5px",

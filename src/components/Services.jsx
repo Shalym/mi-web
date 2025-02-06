@@ -1,16 +1,25 @@
-import React from "react";
-
-const Services = () => {
+const Services = ({ isDarkMode }) => {
     return (
-        <section style={{ display: "flex", justifyContent: "center", gap: "30px", padding: "60px", background: "#111", color: "white" }}>
-            <div style={{ padding: "30px", background: "#222", borderRadius: "10px", textAlign: "center", width: "25%", transition: "0.3s", cursor: "pointer" }}>
-                🎤 <h3>Sonido Profesional</h3>
-            </div>
-            <div style={{ padding: "30px", background: "#222", borderRadius: "10px", textAlign: "center", width: "25%", transition: "0.3s", cursor: "pointer" }}>
-                💡 <h3>Iluminación Espectacular</h3>
-            </div>
-            <div style={{ padding: "30px", background: "#222", borderRadius: "10px", textAlign: "center", width: "25%", transition: "0.3s", cursor: "pointer" }}>
-                🎬 <h3>Producción Audiovisual</h3>
+        <section style={{
+            background: isDarkMode ? "#444" : "#e0e0e0",
+            color: isDarkMode ? "#fff" : "#000",
+            padding: "50px 20px",
+            textAlign: "center"
+        }}>
+            <h2 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>Nuestros Servicios</h2>
+            <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
+                <div style={{ background: isDarkMode ? "#555" : "#fff", padding: "20px", borderRadius: "10px", width: "200px" }}>
+                    <h3>Servicio 1</h3>
+                    <p>Descripción del servicio 1.</p>
+                </div>
+                <div style={{ background: isDarkMode ? "#555" : "#fff", padding: "20px", borderRadius: "10px", width: "200px" }}>
+                    <h3>Servicio 2</h3>
+                    <p>Descripción del servicio 2.</p>
+                </div>
+                <div style={{ background: isDarkMode ? "#555" : "#fff", padding: "20px", borderRadius: "10px", width: "200px" }}>
+                    <h3>Servicio 3</h3>
+                    <p>Descripción del servicio 3.</p>
+                </div>
             </div>
         </section>
     );

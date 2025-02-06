@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import HeroSection from "./components/HeroSection";
-import Services from "./components/Services";
+import HeroSection from './components/HeroSection';
+import Services from './components/Services';
 import AboutUs from './components/AboutUs';
 import Porfolio from './components/Portfolio';
 import Contact from './components/Contact';
@@ -19,12 +19,12 @@ function App() {
   return (
     <div className={darkMode ? "dark" : "light"}>
       <Navbar toggleDarkMode={toggleTheme} isDarkMode={darkMode} />
-      <HeroSection />
-      <Services />
-      <AboutUs />
-      <Porfolio />
-      <Contact />
-      <Footer />
+      <HeroSection isDarkMode={darkMode} />
+      <Services isDarkMode={darkMode} />
+      <AboutUs isDarkMode={darkMode} />
+      <Porfolio isDarkMode={darkMode} />
+      <Contact isDarkMode={darkMode} />
+      <Footer isDarkMode={darkMode} />
     </div>
   );
 }
