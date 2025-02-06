@@ -1,0 +1,31 @@
+/* Modo Claro (por defecto) */
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Modo Oscuro */
+.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Estilos adicionales para otros componentes */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode nav {
+  background-color: #333;
+}
+
+.dark-mode button {
+  background-color: #555;
+  color: #fff;
+}
+
+.light button {
+  background-color: #ddd;
+  color: #000;
+}
