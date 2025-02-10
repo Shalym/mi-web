@@ -1,0 +1,405 @@
+/* Estilos generales */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
+}
+
+/* Estilos generales para Navbar */
+.navbar {
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  margin: 0;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dark-mode-button {
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Modo claro */
+.navbar.light {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar.light .navbar-link {
+  color: white;
+}
+
+.navbar.light .dark-mode-button {
+  background: #ff4500;
+}
+
+/* Modo oscuro */
+.navbar.dark {
+  background: #222;
+}
+
+.navbar.dark .navbar-link {
+  color: white;
+}
+
+.navbar.dark .dark-mode-button {
+  background: #444;
+}
+
+/* HeroSection */
+.hero-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Modo claro */
+.hero-section.light {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.hero-section.light .hero-title {
+  color: #007bff;
+}
+
+.hero-section.light .hero-button {
+  background: #007bff;
+}
+
+/* Modo oscuro */
+.hero-section.dark {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.hero-section.dark .hero-title {
+  color: #ff4500;
+}
+
+.hero-section.dark .hero-button {
+  background: #ff4500;
+}
+
+/* Services */
+.services-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* Modo claro */
+.services-section.light {
+  background: #e0e0e0;
+  color: #000;
+}
+
+.services-section.light .services-title {
+  color: #007bff;
+}
+
+.services-section.light .service-card {
+  background: #fff;
+  color: #000;
+}
+
+.services-section.light .service-title {
+  color: #007bff;
+}
+
+/* Modo oscuro */
+.services-section.dark {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.services-section.dark .services-title {
+  color: #ff4500;
+}
+
+.services-section.dark .service-card {
+  background: #333;
+  color: #fff;
+}
+
+.services-section.dark .service-title {
+  color: #ff4500;
+}
+
+/* Portfolio */
+.portfolio-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-card {
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.portfolio-card-title {
+  color: #007bff;
+}
+
+/* Modo claro */
+.portfolio-section.light {
+  background: #e0e0e0;
+  color: #000;
+}
+
+.portfolio-section.light .portfolio-title {
+  color: #007bff;
+}
+
+.portfolio-section.light .portfolio-card {
+  background: #fff;
+  color: #000;
+}
+
+.portfolio-section.light .portfolio-card-title {
+  color: #007bff;
+}
+
+/* Modo oscuro */
+.portfolio-section.dark {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.portfolio-section.dark .portfolio-title {
+  color: #ff4500;
+}
+
+.portfolio-section.dark .portfolio-card {
+  background: #333;
+  color: #fff;
+}
+
+.portfolio-section.dark .portfolio-card-title {
+  color: #ff4500;
+}
+
+/* Contact */
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-field {
+  margin-bottom: 15px;
+}
+
+.contact-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Modo claro */
+.contact-section.light {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.contact-section.light .contact-title {
+  color: #007bff;
+}
+
+.contact-section.light .contact-input,
+.contact-section.light .contact-textarea {
+  background: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.contact-section.light .contact-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Modo oscuro */
+.contact-section.dark {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.contact-section.dark .contact-title {
+  color: #ff4500;
+}
+
+.contact-section.dark .contact-input,
+.contact-section.dark .contact-textarea {
+  background: #333;
+  color: #fff;
+  border: 1px solid #ccc;
+}
+
+.contact-section.dark .contact-button {
+  background: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* About Us */
+.about-us-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-us-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-us-description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Modo claro */
+.about-us-section.light {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.about-us-section.light .about-us-title {
+  color: #007bff;
+}
+
+.about-us-section.light .about-us-description {
+  color: #000;
+}
+
+/* Modo oscuro */
+.about-us-section.dark {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.about-us-section.dark .about-us-title {
+  color: #ff4500;
+}
+
+.about-us-section.dark .about-us-description {
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+/* Modo claro */
+.footer.light {
+  background: #000;
+  color: #fff;
+}
+
+/* Modo oscuro */
+.footer.dark {
+  background: #1a1a1a;
+  color: #fff;
+}
